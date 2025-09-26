@@ -1,0 +1,63 @@
+<body>
+    <h1 class="text-center">Cinepolis</h1>
+
+    <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <form class="container">
+            <h2>Entrada</h2>
+            <div class="mb-3">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control">
+            </div>
+    
+                    <div class="mb-3">
+                    <label for="compradores">Cantidad de compradores:</label><br>
+                        <input type="number" [(ngModel)]="cantidadcompradores" name="cantidadcompradores" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Tarjeta Cinepolis:</label><br>
+                        <div class="form-check form-check-inline">
+                            <input value="si" class="form-check-input" type="radio" name="button" (click)="descuentotarjeta()">
+                            <label class="form-check-label">Si</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input value="no" class="form-check-input" type="radio" name="button" (click)="descuentotarjeta()">
+                            <label class="form-check-label">No</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="boletos">Cantidad de boletos:</label><br>
+                        <input type="number" [(ngModel)]="cantidadboletos" name="cantidadboletos" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <form >
+
+
+                <h2>Salidas</h2>
+                <div class="mb-3">
+                    <label for="valorPagar">Valor a pagar</label><br>
+                    <label *ngIf="error">{{error}}</label><br>
+                    <input type="text" name="valorPagar" [value]="resultados" class="form-control">
+                </div>
+                <div *ngIf="alerta && !error">
+                    <h3>Ticket</h3>
+                    <label>Precio por boleto: $12</label><br>
+                    <label>Descuento aplicado: {{descuento*100}} %</label><br>
+                </div>
+            </form>
+        </div>
+
+
+        <form class="col-4 text-center">
+            <div class="col-md-80 text-center">
+                <h2>Acciones</h2>
+                <button class="btn btn-primary m-2" type="button" (click)="procesar()">Procesar</button>
+                <button class="btn btn-secondary m-2" type="button">Salir</button>
+            </div>
+        </form>
+    </div>
+</body>
