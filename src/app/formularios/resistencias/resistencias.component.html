@@ -2,14 +2,304 @@
     <h1 class="text-center">Resistencias</h1>
 
     <div class="container mt-4">
-    <div class="row">
-        <div class="col-md-4">
-            <form class="container">
-            <h2>1er banda</h2>
-            <div class="mb-3">
-                <input value="si" class="form-check-input" type="radio" name="button">
-                <div>
-                <!-- <label class="form-check-label">Si</label> -->
+        <div class="row">
+<!--             //Primer banda
+ -->                <div class="col-md-4">
+                <form class="container">
+                    <h2>1ra banda</h2>
+                    <div class="mb-3">
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="0" class="form-check-input" type="radio" name="black">
+                            <div class="color-box"
+                                style="background:black; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                0
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="10" class="form-check-input" type="radio" name="brown">
+                            <div class="color-box"
+                                style="background:brown; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                1
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="20" class="form-check-input" type="radio" name="red">
+                            <div class="color-box"
+                                style="background:red; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                2
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="30" class="form-check-input" type="radio" name="orange">
+                            <div class="color-box"
+                                style="background:orange; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                3
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="40" class="form-check-input" type="radio" name="yellow">
+                            <div class="color-box"
+                                style="background:yellow; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                4
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="50" class="form-check-input" type="radio" name="green">
+                            <div class="color-box"
+                                style="background:green; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                5
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="60" class="form-check-input" type="radio" name="blue">
+                            <div class="color-box"
+                                style="background:blue; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                6
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="70" class="form-check-input" type="radio" name="purple">
+                            <div class="color-box"
+                                style="background:purple; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                7
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="80" class="form-check-input" type="radio" name="gray">
+                            <div class="color-box"
+                                style="background:gray; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:white; font-weight:bold;">
+                                8
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom:1px;">
+                            <input [(ngModel)]="banda1" value="90" class="form-check-input" type="radio" name="white">
+                            <div class="color-box"
+                                style="background:white; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 0 0 4px; color:black; font-weight:bold; border:1px solid #ccc;">
+                                9
+                            </div>
+                        </div>
                     </div>
+                </form>
+            </div>
+
+<!--             //Segunda banda
+ -->            <div class="col-md-3">
+                <form class="container">
+                    <h2>2da banda</h2>
+                    <div class="mb-3">
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:black; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                0
+                            </div>
+                            <input [(ngModel)]="banda2" value="0" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:brown; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                1
+                            </div>
+                            <input [(ngModel)]="banda2" value="1" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:red; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                2
+                            </div>
+                            <input [(ngModel)]="banda2" value="2" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:orange; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                3
+                            </div>
+                            <input [(ngModel)]="banda2" value="3" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:yellow; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                4
+                            </div>
+                            <input [(ngModel)]="banda2" value="4" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:green; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                5
+                            </div>
+                            <input [(ngModel)]="banda2" value="5" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:blue; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                6
+                            </div>
+                            <input [(ngModel)]="banda2" value="6" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:purple; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                7
+                            </div>
+                            <input [(ngModel)]="banda2" value="7" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:gray; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                8
+                            </div>
+                            <input [(ngModel)]="banda2" value="8" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:white; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:black; font-weight:bold; border:1px solid #ccc;">
+                                9
+                            </div>
+                            <input [(ngModel)]="banda2" value="9" class="form-check-input" type="radio" name="banda2">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+<!--          Tercer banda
+ -->            <div class="col-md-3">
+                <form class="container">
+                    <h2>3ra banda</h2>
+                    <div class="mb-3">
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:black; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x1
+                            </div>
+                            <input [(ngModel)]="banda3" value="1" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:brown; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x10
+                            </div>
+                            <input [(ngModel)]="banda3" value="10" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:red; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x100
+                            </div>
+                            <input [(ngModel)]="banda3" value="100" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:orange; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x1000
+                            </div>
+                            <input [(ngModel)]="banda3" value="1000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:yellow; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x10000
+                            </div>
+                            <input [(ngModel)]="banda3" value="10000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:green; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x100000
+                            </div>
+                            <input [(ngModel)]="banda3" value="100000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:blue; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x1000000
+                            </div>
+                            <input [(ngModel)]="banda3" value="1000000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:purple; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x10000000
+                            </div>
+                            <input [(ngModel)]="banda3" value="10000000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:gray; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                x100000000
+                            </div>
+                            <input [(ngModel)]="banda3" value="100000000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:white; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:black; font-weight:bold; border:1px solid #ccc;">
+                                x1000000000
+                            </div>
+                            <input [(ngModel)]="banda3" value="1000000000" class="form-check-input" type="radio" name="banda3">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- //4ta banda -->
+            <div class="col-md-3">
+                <form class="container">
+                    <h2>4ta banda</h2>
+                    <div class="mb-3" style="display: flex; flex-direction: column;">
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background: gold; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                Dorado 5%
+                            </div>
+                            <input [(ngModel)]="banda4" value="0.05" class="form-check-input" type="radio" name="banda4">
+                        </div>
+                        <div style="display: flex; flex-direction: row-reverse; align-items: center; margin-bottom:1px;">
+                            <div class="color-box"
+                                style="background:gray; width: 150px; height:30px; display:flex; align-items:center; justify-content:center; margin:0 4px 0 0; color:white; font-weight:bold;">
+                                Plata 10%
+                            </div>
+                            <input [(ngModel)]="banda4" value="0.10" class="form-check-input" type="radio" name="banda4">
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button (click)="calcularResistenciaMandar()" type="button">Calcular</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <table >
+    <tr>
+      <th>Color1</th>
+      <th>Color2</th>
+      <th>Color3</th>
+      <th>Tolerancia</th>
+      <th>Valor</th>
+      <th>Valor máximo</th>
+      <th>Valor mínimo</th>
+    </tr>
+    <tr>
+    <td [style.background]="coloresbanda1[banda1]">{{textobanda1[banda1]}}</td>
+    <td [style.background]="coloresbanda2[banda2]">{{textobanda2[banda2]}}</td>
+    <td [style.background]="coloresbanda3[banda3]">{{textobanda3[banda3]}}</td>
+    <td [style.background]="coloresbanda4[banda4]">{{banda4letra[banda4]}} : {{banda4porcentaje[banda4]}}</td>
+      <td>{{valorResistencia}}</td>
+      <td>{{valorMaximo}}</td>
+      <td>{{valorMinimo}}</td>
+    </tr>
+  </table>
     </div>
-            
+
+<style>
+    table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 18px;
+    }
+  </style>
+
+        <!-- Tablas respuestas -->
+        

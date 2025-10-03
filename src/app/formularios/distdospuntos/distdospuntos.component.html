@@ -1,0 +1,17 @@
+<h1>Distancia entre dos puntos</h1>
+<div>
+    <label>
+        <input type="text" placeholder="X1" [(ngModel)]="x1">
+    </label><br>
+    <label>
+        <input type="text" placeholder="YI" [(ngModel)]="y1">
+    </label><br>
+    <label>
+        <input type="text" placeholder="X2" [(ngModel)]="x2">
+    </label><br>
+    <label>
+        <input type="text" placeholder="Y2" [(ngModel)]="y2">
+    </label><br>
+    <button (click)="calcularDistanciaMandar()">Calcular</button>
+    <p *ngIf="distancia!==0">La distancia entre los dos puntos es: {{distancia}}</p>
+</div>
